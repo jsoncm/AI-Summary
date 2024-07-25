@@ -1,0 +1,17 @@
+{
+  "name": "AI-Summary",
+  "version": "1.0.0",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jsoncm/AI-Summary/blob/master/LICENSE"
+  },
+  "author": "jsoncm",
+  "homepage": "https://github.com/jsoncm/AI-Summary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsoncm/AI-Summary"
+  },
+  "bugs": {
+    "url": "https://github.com/jsoncm/AI-Summary/issues"
+  }
+}
