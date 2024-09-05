@@ -1,6 +1,8 @@
 # user files
 test/
 .user/
+.vscode/
+.idea/
 *.temp
 .release/
 

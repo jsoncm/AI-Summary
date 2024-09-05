@@ -10,7 +10,6 @@ class OpenAIChatBot:
                  frequency_penalty: float, presence_penalty: float):
         openai.api_key = api_key
         openai.api_base = st.session_state["OPENAI_PROXY"]
-        print(openai.api_base)
         self.persona = persona
         self.model = model
         self.max_tokens = max_tokens
