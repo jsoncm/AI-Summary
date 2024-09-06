@@ -23,7 +23,7 @@ with app_header:
     st.markdown("##### [GitHub repo](https://github.com/jsoncm/AI-Summary)")
     st.warning("🚧️ This app is still in beta. Please [report any bugs](https://github.com/jsoncm/AI-Summary/issues) to the GitHub repo.")
 
-sidebar()
+# sidebar()
 
 with file_handler:
     if st.button("🔃 Refresh"):
@@ -45,7 +45,7 @@ with file_handler:
         with st.spinner("🔍 Reading file... (mp3 file might take a while)"):
             file_content = {'name': upload_file.name, 'content': file_io.read(upload_file)}
     elif youtube_link and upload_file:
-        st.warning("Please only upload one file at a time.")
+        st.warning("Please only upload one file at a time")
     else:
         file_content = None
 
