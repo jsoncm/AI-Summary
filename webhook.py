@@ -18,8 +18,8 @@ def webhook():
             data = request.json
             
             # 打印收到的完整 JSON 数据
-            # print("Received payload:")
-            # print(json.dumps(data, indent=4))  # 打印 JSON payload，便于调试
+            print("Received payload:")
+            print(json.dumps(data, indent=4))  # 打印 JSON payload，便于调试
 
             # 仅处理 push 事件
             if event == 'push':
