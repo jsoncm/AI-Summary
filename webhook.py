@@ -18,11 +18,12 @@ def webhook():
             data = request.json
             
             # 打印收到的完整 JSON 数据
-            # print("Received payload:")
+            print("Received payload:")
             # print(json.dumps(data, indent=4))  # 打印 JSON payload，便于调试
 
             # 仅处理 push 事件
             if event == 'push':
+                print("处理push事件...")
                 # 确认 'ref' 字段是否存在
                 if 'ref' in data:
                     # 检查是否是 master 分支的推送
