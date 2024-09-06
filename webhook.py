@@ -27,7 +27,7 @@ def webhook():
                 if 'ref' in data:
                     # 检查是否是 master 分支的推送
                     if data['ref'] == 'refs/heads/main':
-                        print("Push to master branch detected.")
+                        print("Push to main branch detected.")
 
                         # 进入项目目录
                         os.chdir('/root/project/AI-Summary')
