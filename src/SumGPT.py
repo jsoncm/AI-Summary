@@ -141,13 +141,13 @@ with result_handler:
                 for i, response in enumerate(rec_responses):
                     st.info(f'{response}')
             if finish_reason_rec == 'length':
-                st.warning('⚠️Result cut off due to length. Consider increasing the [Max Tokens Chunks] parameter')
+                st.warning('⚠️Result cut off due to length. Consider increasing the [Max Tokens Chunks] parameter.')
 
         if final_response is not None:
             st.header("📝Summary")
             st.info(final_response)
             if finish_reason_final == 'length':
                 st.warning(
-                    '⚠️Result cut off due to length. Consider increasing the [Max Tokens Summary] parameter')
+                    '⚠️Result cut off due to length. Consider increasing the [Max Tokens Summary] parameter.')
         if final_response is not None or rec_responses is not None:
             util.download_results(rec_responses, final_response)
