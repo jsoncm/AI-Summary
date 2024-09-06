@@ -41,6 +41,7 @@ def webhook():
                         restart_result = subprocess.run(['supervisorctl', 'restart', 'flask_webhook_ai_summary'], capture_output=True, text=True)
                         print(restart_result.stdout)  # 输出重启的结果
 
+                        print("Deployment completed successfully.")
                         return 'Deployment completed successfully', 200
                     else:
                         print(f"Push to a different branch: {data['ref']}")
