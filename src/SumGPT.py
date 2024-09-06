@@ -45,7 +45,7 @@ with file_handler:
         with st.spinner("🔍 Reading file... (mp3 file might take a while)"):
             file_content = {'name': upload_file.name, 'content': file_io.read(upload_file)}
     elif youtube_link and upload_file:
-        st.warning("Please only upload one file at a time")
+        st.warning("Please only upload one file at a time.")
     else:
         file_content = None
 
