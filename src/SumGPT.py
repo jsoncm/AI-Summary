@@ -23,7 +23,7 @@ with app_header:
     st.markdown("##### [GitHub repo](https://github.com/jsoncm/AI-Summary)")
     st.warning("🚧️ This app is still in beta. Please [report any bugs](https://github.com/jsoncm/AI-Summary/issues) to the GitHub repo.")
 
-sidebar()
+# sidebar()
 
 with file_handler:
     if st.button("🔃 Refresh"):
