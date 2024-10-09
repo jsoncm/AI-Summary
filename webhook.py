@@ -38,7 +38,7 @@ def webhook():
                         print(pull_result.stdout)  # 输出 git pull 的结果
 
                         # 重启 streamlit 服务
-                        restart_result = subprocess.run(['supervisorctl', 'restart', 'flask_webhook_ai_summary'], capture_output=True, text=True)
+                        restart_result = subprocess.run(['supervisorctl', 'restart', 'streamlit'], capture_output=True, text=True)
                         print(restart_result.stdout)  # 输出重启的结果
 
                         print("Deployment completed successfully.")
