@@ -144,7 +144,7 @@ with result_handler:
                 st.warning('⚠️Result cut off due to length. Consider increasing the [Max Tokens Chunks] parameter.')
 
         if final_response is not None:
-            st.header("📝Summary")
+            st.header("📝Summary-GPT")
             st.info(final_response)
             if finish_reason_final == 'length':
                 st.warning(
